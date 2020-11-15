@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import {Home} from './pages/Home'
 import {About} from './pages/About'
+import {PersonalPage} from './pages/PersonalPage'
+import {Catalogue} from './pages/Catalogue'
 import {NavBar} from './components/NavBar'
 import { Alert } from './components/Alert'
 import { AlertState } from './context/alert/AlertState';
@@ -15,7 +17,10 @@ function App() {
             <Alert />
             <Switch>
               <Route path={'/'} exact component={Home}/>
+              <Route path={'/catalogue'} component={Catalogue}/>
+              <Route path={'/personalPage'} component={PersonalPage}/>
               <Route path={'/about'} component={About}/>
+
             </Switch>
         </div>
       </BrowserRouter>
