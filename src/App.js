@@ -20,7 +20,6 @@ function App() {
               <Route path={'/catalogue'} component={Catalogue}/>
               <Route path={'/personalPage'} component={PersonalPage}/>
               <Route path={'/about'} component={About}/>
-
             </Switch>
         </div>
       </BrowserRouter>
